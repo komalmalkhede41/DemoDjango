@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout page</title>
+</head>
+<body>
+    <form action="logout" method="post">
+        {% csrf_token %}
+        <div>
+            <h4>Welcome {{user}}, You have login Successfully... </h4>
+            <ul>
+                <li><b><a href="logout">Logout</a></b></li>
+                <li><b><a href="../">Home</a></b></li>
+            </ul>
+	    </div>
+    </form>
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <title>Home Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    &lt;!&ndash;<h1> Welcome {{user}} </h1>&ndash;&gt;-->
+<!--    <div>-->
+<!--		<h2>User Login Form</h2>-->
+<!--		<ul>-->
+<!--			<li><b><a href="accounts/login">Login</a></b></li>-->
+<!--			<li><b><a href="signup">Sign Up</a></b></li>-->
+<!--		</ul>-->
+<!--	</div>-->
+<!--</body>-->
+<!--</html>-->

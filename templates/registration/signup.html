@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <ul align="right">
+        <b><a href="../">Home</a></b>
+    </ul>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Sign up">
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
